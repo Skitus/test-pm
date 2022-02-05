@@ -1,0 +1,123 @@
+.candidates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 67%;
+
+  .candidates-item {
+    border: 1px solid #EAEAEA;
+    margin-bottom: 40px;
+
+    .flex-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .personal-info {
+        display: flex;
+        align-items: center;
+
+        .avatar {
+          border-radius: 100px;
+          border: 1px solid black;
+          width: 164px;
+          height: 164px;
+          object-fit: cover;
+          object-position: center;
+          margin-right: 20px;
+          margin-left: 20px;
+        }
+
+        .profession {
+          margin-bottom: 0px;
+        }
+
+
+        .flex-box-info, .flex-box-info-status, .flex-box-info-city  {
+          display: flex;
+          align-items: center;
+
+          .name-age {
+            margin-right: 20px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            font-size: 16px;
+            color: #202020;
+          }
+
+          .place {
+            width: 12px;
+          }
+
+          .city-country {
+            font-size: 14px;
+            color: #202020;
+          }
+
+          img {
+            margin-right: 10px;
+          }
+        }
+
+        .previous-jobs {
+          color: #5B5B5B;
+          font-size: 14px;
+
+          p {
+            margin-top: 10px;
+          }
+        }
+
+
+        .time-update {
+          color: #A6A6A6;
+          font-size: 12px;
+          margin-right: 20px;
+        }
+
+        .flex-box-status {
+          display: flex;
+          align-items: center;
+
+          .status {
+            color: #4CAF50;
+            font-size: 12px;
+          }
+        }
+
+      }
+
+      .utils {
+        display: flex;
+        align-items: center;
+
+        .like, .options {
+          border-radius: 10px;
+          border: 1px solid #F0F0F0;
+          width: 46px;
+          height: 46px;
+          margin: 0px 5px;
+          cursor: pointer;
+
+
+          .like-img, .options-img {
+            display: block;
+            margin: 12px auto;
+          }
+
+          .options-img {
+            margin: 15px auto;
+          }
+        }
+
+        .options {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  .pagination {
+    margin: 50px auto;
+  }
+}

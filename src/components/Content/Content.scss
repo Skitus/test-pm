@@ -1,0 +1,132 @@
+.content-wrapper {
+  max-width: 1300px;
+  margin: 0px auto;
+
+  .content-flex-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 120px;
+    align-items: flex-start;
+
+
+    .filters {
+      width: 30%;
+
+      .cancel {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .content-title {
+      margin-left: 20px;
+
+      .decor-line {
+        width: 140px;
+      }
+
+      .flex-box-main {
+        align-items: flex-end;
+
+        .flex-box {
+          flex-direction: column;
+
+          .select {
+            width: 150px;
+          }
+        }
+
+        .adaptive-icon-filter {
+          display: block;
+        }
+      }
+    }
+
+    .content-flex-box {
+      flex-direction: column;
+
+      .candidates {
+        width: 90%;
+        margin: 0px auto;
+      }
+
+      .filters {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        background: white;
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+        overflow-y: scroll;
+
+        .cancel {
+          display: block;
+          position: relative;
+          left: 90%;
+        }
+      }
+
+      .filters.active {
+        padding: 0px;
+        transform: translateX(0);
+
+        .filters-box {
+          width: 90%;
+          margin: 0px auto;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .personal-info {
+      align-items: flex-start !important;
+
+      .avatar {
+        width: 70px !important;
+        height: 70px !important;
+        margin-top: 20px;
+      }
+
+      .info {
+        .profession {
+          font-size: 16px;
+        }
+
+        .flex-box-info {
+          flex-direction: column;
+          align-items: flex-start !important;
+          margin-top: 15px;
+        }
+
+        .flex-box-info-status {
+          flex-direction: column-reverse;
+          align-items: flex-start !important;
+          margin-left: -80px;
+        }
+      }
+    }
+
+    .previous-jobs {
+      margin-left: -80px;
+    }
+
+    .flex-box {
+      align-items: flex-end !important;
+
+      .utils {
+        display: none !important;
+        margin-bottom: 20px;
+
+        .like, .options {
+          border: none !important;
+        }
+      }
+    }
+  }
+}

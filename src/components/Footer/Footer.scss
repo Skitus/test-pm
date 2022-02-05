@@ -1,0 +1,66 @@
+.footer-wrapper {
+  background-image: url("/images/Descktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-weight: 300;
+
+  .flex-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0px;
+    color: white;
+    max-width: 1300px;
+    margin: 0px auto;
+  }
+
+  .media {
+
+    img {
+      width: 24px;
+      height: 24px;
+      padding: 30px 19px;
+    }
+  }
+
+  .bottom-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 1px solid white;
+    margin: 0px auto;
+    width: 80%;
+    text-align: center;
+    padding: 20px 0px;
+    padding-bottom: 40px;
+
+    span {
+      color: white;
+      padding: 0px 40px;
+      margin: 10px 0px;
+      border-right: 1px solid white;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .flex-footer {
+      flex-direction: column;
+
+      .another, .cooperation, .media {
+        padding-bottom: 20px;
+        text-align: center;
+      }
+    }
+
+    .media {
+
+      img {
+        padding: 30px 2%;
+      }
+    }
+  }
+}

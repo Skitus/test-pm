@@ -1,0 +1,169 @@
+.header-wrapper {
+  background-image: url("/images/Header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-weight: 400;
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    max-width: 1440px;
+    margin: 0px auto;
+
+    .header-left {
+      color: white;
+      font-size: 16px;
+
+      span {
+        padding: 0px 10px;
+        border-right: 1px solid white;
+
+        .adaptive-arrow {
+          display: none;
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+
+        &.active {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+
+      .select {
+        background-color: inherit;
+        color: white;
+        border: none;
+        outline: none;
+
+        option {
+          color: black;
+        }
+      }
+
+      .sign-up {
+        color: white;
+        padding-left: 20px;
+      }
+    }
+  }
+
+  .adaptive-header-middle {
+    display: none;
+    text-align: center;
+    color: white;
+
+    .flex-box-middle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .header-form {
+    color: white;
+    max-width: 1440px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0px;
+
+    .find-candidate {
+      font-family: 'Montserrat', sans-serif;
+      border-radius: 10px;
+      background: rgba(225, 225, 225, 0.2) url("/images/Group.svg") no-repeat scroll 10px 18px;
+      text-indent: 30px;
+      width: 410px;
+      height: 50px;
+      color: white;
+      border: none;
+      outline: none;
+      margin: 0px 3px;
+
+      &::placeholder {
+        color: white;
+      }
+    }
+
+    .city {
+      font-family: 'Montserrat', sans-serif;
+      border-radius: 10px;
+      background: rgba(225, 225, 225, 0.2) url("/images/Group 25.svg") no-repeat scroll 10px 18px;
+      text-indent: 30px;
+      width: 205px;
+      height: 50px;
+      color: white;
+      border: none;
+      outline: none;
+      margin: 0px 3px;
+
+      &::placeholder {
+        color: white;
+      }
+    }
+
+    .button {
+      font-family: 'Montserrat', sans-serif;
+      width: 200px;
+      height: 50px;
+      background-color: #FFF9E4;
+      border: 1px solid black;
+      outline: none;
+      border-radius: 10px;
+      font-weight: 600;
+      margin: 0px 3px;
+    }
+
+  }
+
+  @media (max-width: 992px) {
+    .header-top {
+      width: 85%;
+      flex-direction: row-reverse;
+
+      .sign-up {
+        display: none;
+      }
+
+      .header-left {
+
+        span:nth-child(1) {
+          border: none;
+
+          .adaptive-arrow {
+            display: inline-block;
+            transform: rotate(90deg);
+            letter-spacing: 2px;
+          }
+        }
+
+        span:nth-child(2), span:nth-child(3) {
+          display: none;
+        }
+      }
+    }
+
+    .adaptive-header-middle {
+      display: block;
+    }
+
+    .header-form {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+
+      .find-candidate, .city, .button {
+        width: 90%;
+        margin: 10px auto;
+      }
+    }
+  }
+}

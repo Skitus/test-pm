@@ -1,0 +1,28 @@
+.with-photo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FDFDFF;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+
+  .flex-box-filter {
+    display: flex;
+
+    .with-photo-img {
+      margin-right: 10px;
+    }
+  }
+
+  .MuiSwitch-track {
+    background-color: #E5E5FF !important;
+  }
+
+  .MuiSwitch-thumb {
+    background-color: #000046;
+    width: 14px;
+    height: 14px;
+    margin-top: 2px;
+    margin-left: 3px;
+  }
+}
