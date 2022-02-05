@@ -200,7 +200,7 @@ const mockLanguages = [
 ];
 
 const Languages = ({handleClick, open}) => {
-    console.log('open', open);
+
     return (
         <div className="with-languages">
             <h3 className="caption-filter">Владение языками</h3>
